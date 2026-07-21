@@ -201,7 +201,7 @@
                 end)
 
                 if not ok or not data or type(data) ~= "string" or #data == 0 then
-                    warn("[PetPanel] Р СњР Вµ РЎС“Р Т‘Р В°Р В»Р С•РЎРѓРЎРЉ РЎРѓР С”Р В°РЎвЂЎР В°РЎвЂљРЎРЉ Р С”Р В°РЎР‚РЎвЂљР С‘Р Р…Р С”РЎС“ Р С—Р С• РЎРѓРЎРѓРЎвЂ№Р В»Р С”Р Вµ: " .. tostring(url))
+                    print("bad")
                     return nil
                 end
 
@@ -213,7 +213,7 @@
             end)
 
             if not ok then
-                warn("[PetPanel] getcustomasset Р Р…Р Вµ РЎРѓРЎР‚Р В°Р В±Р С•РЎвЂљР В°Р В» Р Т‘Р В»РЎРЏ: " .. path)
+                print("bad")
                 return nil
             end
 
